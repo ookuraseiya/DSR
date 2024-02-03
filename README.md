@@ -26,3 +26,10 @@ OS
 コンパイラ
 
 - gcc 9.4.0
+
+# システムの実行方法
+
+```bash
+gcc dsr_packet.c dsr_test.c dsr.c -o dsr
+./dsr
+```
