@@ -5,33 +5,18 @@
 
 <br>
 
-# 開発環境
+# システム概要
 
-言語
+詳しくは以下のポートフォリオサイトをご覧ください。
 
-- C言語
-
-エディタ
-
-- Visual Studio Code
-
-OS
-
-- Ubuntu 20.04
-
-実行環境
-
-- WSL 0.2.1
-
-コンパイラ
-
-- gcc 9.4.0
+[seiya-portfolio-site.netlify.app](https://seiya-portfolio-site.netlify.app)
 
 <br>
 
-# システムの実行方法
+# 使用技術
 
-```bash
-gcc dsr_packet.c dsr_test.c dsr.c -o dsr
-./dsr
-```
+- C言語
+- Ubuntu
+- WSL
+- gcc
+- Visual Studio Code
