@@ -18,11 +18,3 @@ DSRの主要機能を **C言語で実装** しています。
 | 🪟 環境 | WSL |
 | ⚙ コンパイラ | gcc |
 | 📝 エディタ | Visual Studio Code |
-
----
-
-## 🌐 ポートフォリオサイト
-
-📎 詳細はこちら：
-
-👉 https://seiya-portfolio-site.netlify.app
