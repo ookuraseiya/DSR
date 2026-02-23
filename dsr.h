@@ -1,8 +1,8 @@
 #ifndef DSR_H
 #define DSR_H
 
-#include "dsr_packet.h"
 #include "dsr_constants.h"
+#include "dsr_packet.h"
 
 void set_id(uint8_t own_id[IP_LENGTH]);
 void set_broadcast(uint8_t ba[IP_LENGTH]);

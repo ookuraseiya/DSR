@@ -1,9 +1,8 @@
-#include <stdio.h>
-#include "dsr_packet.h"
 #include "dsr.h"
+#include "dsr_packet.h"
+#include <stdio.h>
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
     dsr_p dsr;
     dsr.ptype = 1;
     dsr.src[0] = 10, dsr.src[1] = 0, dsr.src[2] = 0, dsr.src[3] = 1;
@@ -19,8 +18,7 @@ int main(int argc, char **argv)
     uint8_t buf[len];
     dsr_serialize(&buf[0], &dsr);
     printf("buf=[");
-    for (int i = 0; i < len; i++)
-    {
+    for (int i = 0; i < len; i++) {
         printf("%d ", buf[i]);
     }
     printf("]\n");
@@ -62,8 +60,7 @@ int main(int argc, char **argv)
     // next_id配列の値を出力
     uint8_t *n = get_next();
     printf("next_id=[");
-    for (int i = 0; i < IP_LENGTH; i++)
-    {
+    for (int i = 0; i < IP_LENGTH; i++) {
         printf("%d ", n[i]);
     }
     printf("]\n\n");
@@ -73,8 +70,7 @@ int main(int argc, char **argv)
     packet_processing(&p3);
     n = get_next();
     printf("next_id=[");
-    for (int i = 0; i < IP_LENGTH; i++)
-    {
+    for (int i = 0; i < IP_LENGTH; i++) {
         printf("%d ", n[i]);
     }
     printf("]\n\n");
@@ -84,8 +80,7 @@ int main(int argc, char **argv)
     uint8_t buf2[p3len];
     dsr_serialize(buf2, &p3);
     printf("p3=[%d", buf2[0]);
-    for (int i = 1; i < p3len; i++)
-    {
+    for (int i = 1; i < p3len; i++) {
         printf(",%d", buf2[i]);
     }
     printf("]\n\n");
