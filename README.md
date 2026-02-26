@@ -1,20 +1,37 @@
-## 📌 概要
+## 概要
 
-🎓 卒業研究として  
-**DSR（Dynamic Source Routing）プロトコル** を研究・実装しました。
-
-本プロジェクトでは、  
-アドホックネットワーク向けルーティングプロトコルである  
-DSRの主要機能を **C言語で実装** しています。
+卒業研究としてDSR（Dynamic Source Routing）プロトコルを研究・実装しました。
 
 --- 
 
-## 🛠 使用技術
+## 使用技術
 
 | 技術 | 内容 |
 |------|------|
-| 💻 言語 | C |
-| 🐧 OS | Ubuntu |
-| 🪟 環境 | WSL |
-| ⚙ コンパイラ | gcc |
-| 📝 エディタ | Visual Studio Code |
+| 言語 | C |
+| OS | Ubuntu |
+| 環境 | WSL |
+| コンパイラ | gcc |
+| エディタ | Visual Studio Code |
+
+---
+
+## ビルド・実行方法
+
+### ビルド
+
+```bash
+make
+```
+
+### 実行
+
+```bash
+make run
+```
+
+### クリーンアップ
+
+```bash
+make clean
+```
